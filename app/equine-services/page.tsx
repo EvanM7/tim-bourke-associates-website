@@ -1,30 +1,43 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PageHero from "@/components/PageHero";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Equine Services | Tim Bourke & Associates",
   description:
-    "Equine consultancy services from Tim Bourke & Associates for stud farms, horse owners and the wider equine industry in Tipperary and beyond.",
+    "Equine consultancy services including nutrient recommendations, feed programmes, forage and diet assessment, and grassland management in Tipperary.",
   alternates: {
     canonical: "/equine-services",
   },
 };
 
-const equineSupport = [
-  "Nutrient Recommendations",
-  "Feed Programmes",
-  "Forage & Diet Assessment",
-  "Grassland Establishment & Maintenance",
-];
-
-const idealClients = [
-  "Stud farm owners",
-  "Horse owners",
-  "Equine businesses",
-  "Clients seeking nutrition and grassland support",
+const sections = [
+  {
+    id: "nutrient-recommendations",
+    title: "Nutrient Recommendations",
+    text: "We perform detailed scientific analysis of soil, grass, animal tissue and water. By monitoring nutrient levels, we can compile recommendations specific to the farm or stud’s unique environment.",
+    image: "/soil sample.jpg",
+  },
+  {
+    id: "feed-programmes",
+    title: "Feed Programmes",
+    text: "We design tailored feed programmes for mares, stallions, foals and young horses, helping support healthy development, performance and long-term wellbeing.",
+    image: "/farm-placeholder.jpg",
+  },
+  {
+    id: "forage-diet-assessment",
+    title: "Forage & Diet Assessment",
+    text: "We carry out comprehensive diet analyses to identify major and minor nutrient imbalances. Forage samples are assessed to ensure horses are receiving high-quality nutrition capable of supporting growth and performance.",
+    image: "/farm-placeholder.jpg",
+  },
+  {
+    id: "grassland-establishment-maintenance",
+    title: "Grassland Establishment & Maintenance",
+    text: "We provide detailed advice on suitable grassland reseeding and rejuvenation techniques. Soil nutrient profiles are assessed using sample analysis to help ensure balanced growth and optimal grass quality. This includes sustainable pasture management, rotational grazing, stocking rate guidance and reseeding strategies tailored to your land and usage.",
+    image: "/farm-placeholder.jpg",
+  },
 ];
 
 export default function EquineServicesPage() {
@@ -34,106 +47,129 @@ export default function EquineServicesPage() {
 
       <PageHero
         eyebrow="Equine Services"
-        title="Equine consultancy for stud farms, horse owners and the wider industry"
-        description="Tim Bourke & Associates provides equine-focused consultancy designed to support horse health, nutrition, forage planning and grassland management. This page is built to speak directly to stud farms and the wider equine market."
+        title="Equine consultancy and nutrition support"
+        description="We provide specialised equine consultancy services, helping horse owners and stud farms optimise nutrition, forage quality and grassland performance."
       />
 
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-          <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
-              What We Help With
-            </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight">
-              Practical support across key equine nutrition and land management areas
-            </h2>
-            <p className="mt-4 max-w-3xl leading-7 text-stone-700">
-              We help equine clients make more informed decisions around horse
-              nutrition, feed planning, forage quality and the management of
-              grassland used to support horse performance and wellbeing.
-            </p>
-
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
-              {equineSupport.map((service) => (
-                <div
-                  key={service}
-                  className="rounded-2xl border border-stone-200 bg-stone-50 p-5"
-                >
-                  <p className="font-semibold text-stone-900">{service}</p>
-                </div>
-              ))}
-            </div>
+      {/* Main image */}
+      <section className="mx-auto max-w-5xl px-6 py-12">
+        <div className="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm">
+          <div className="relative h-[280px] w-full sm:h-[360px] md:h-[440px]">
+            <Image
+              src="/horses-field.jpg"
+              alt="Equine services overview"
+              fill
+              priority
+              className="object-cover"
+            />
           </div>
 
-          <div className="rounded-3xl border border-stone-200 bg-[#f7f7f2] p-8 shadow-sm">
+          <div className="p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
-              Who This Is For
+              Equine Services
             </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight">
-              Built for real equine decision-makers
+            <h2 className="mt-3 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+              Specialist support for horse owners and stud farms
             </h2>
-
-            <div className="mt-6 space-y-4">
-              {idealClients.map((client) => (
-                <div
-                  key={client}
-                  className="rounded-2xl border border-stone-200 bg-white p-4"
-                >
-                  <p className="font-semibold text-stone-900">{client}</p>
-                </div>
-              ))}
-            </div>
+            <p className="mt-4 max-w-3xl leading-7 text-stone-700">
+              This page brings together the core equine service areas from Tim
+              Bourke & Associates into one clear, modern structure. When the
+              client sends final images, each section below is ready for its own
+              dedicated photograph.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f7f7f2]">
-        <div className="mx-auto max-w-6xl px-6 py-20">
-          <div className="grid gap-10 md:grid-cols-2">
-            <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
+      {/* Jump links */}
+      <section className="mx-auto max-w-5xl px-6 py-4">
+        <div className="rounded-3xl border border-stone-200 bg-stone-50 p-8 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+            Equine Service Areas
+          </p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-stone-900">
+            Jump to a section
+          </h2>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {sections.map((section) => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className="rounded-2xl border border-stone-200 bg-white p-5 font-semibold text-stone-900 transition hover:border-green-700 hover:text-green-700"
+              >
+                {section.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sub-sections with images */}
+      <section className="mx-auto max-w-5xl space-y-16 px-6 py-12">
+        {sections.map((section, index) => (
+          <div
+            key={section.id}
+            id={section.id}
+            className="grid scroll-mt-28 items-center gap-8 rounded-3xl border border-stone-200 bg-white p-8 shadow-sm md:grid-cols-2"
+          >
+            <div className={index % 2 === 1 ? "md:order-2" : ""}>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
-                Why It Matters
+                Equine Service
               </p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight">
-                Clearer positioning for the equine market
+              <h2 className="mt-3 text-2xl font-bold text-stone-900">
+                {section.title}
               </h2>
-              <p className="mt-4 leading-7 text-stone-700">
-                This section helps separate equine services from general farm
-                consultancy, making it easier for stud farms and horse owners to
-                understand that Tim Bourke & Associates offers relevant support
-                for their needs.
+              <p className="mt-4 leading-relaxed text-stone-700">
+                {section.text}
               </p>
             </div>
 
-            <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
-                Prostep Connection
-              </p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight">
-                A natural pathway into Prostep supplements
-              </h2>
-              <p className="mt-4 leading-7 text-stone-700">
-                This page also creates a strong commercial bridge into Prostep,
-                helping position the supplement offering within a broader equine
-                consultancy service rather than as a disconnected product line.
-              </p>
+            <div className={index % 2 === 1 ? "md:order-1" : ""}>
+              <div className="relative h-64 w-full overflow-hidden rounded-2xl border border-stone-200 bg-stone-100">
+                <Image
+                  src={section.image}
+                  alt={section.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
+        ))}
+      </section>
 
-          <div className="mt-12 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href="/prostep"
-              className="rounded-xl border border-stone-300 bg-white px-6 py-3 text-center font-semibold text-stone-900 transition hover:bg-stone-100"
-            >
-              Explore Prostep
-            </Link>
+      {/* CTA */}
+      <section className="bg-[#f7f7f2]">
+        <div className="mx-auto max-w-5xl px-6 py-20">
+          <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+              Get in Touch
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-stone-900">
+              Speak with Tim Bourke & Associates
+            </h2>
+            <p className="mt-4 max-w-3xl leading-7 text-stone-700">
+              If you would like to discuss equine nutrition, feed planning,
+              forage assessment or grassland management, get in touch to discuss
+              your requirements.
+            </p>
 
-            <Link
-              href="/contact"
-              className="rounded-xl bg-green-700 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-800"
-            >
-              Enquire About Equine Services
-            </Link>
+            <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="/contact"
+                className="rounded-xl bg-green-700 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-800"
+              >
+                Send an Enquiry
+              </a>
+
+              <a
+                href="tel:0862568114"
+                className="rounded-xl border border-stone-300 bg-white px-6 py-3 text-center font-semibold text-stone-900 transition hover:bg-stone-100"
+              >
+                Call Now
+              </a>
+            </div>
           </div>
         </div>
       </section>

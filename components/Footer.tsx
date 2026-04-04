@@ -28,6 +28,9 @@ export default function Footer() {
               >
                 Equine Services
               </a>
+              <a href="/farm-consultancy" className="transition hover:text-green-700">
+                Farm Consultancy
+              </a>
               <a href="/prostep" className="transition hover:text-green-700">
                 Prostep
               </a>

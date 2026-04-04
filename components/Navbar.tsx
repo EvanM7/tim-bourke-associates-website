@@ -8,8 +8,10 @@ const navItems = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/equine-services", label: "Equine Services" },
+  { href: "/farm-consultancy", label: "Farm Consultancy" },
   { href: "/prostep", label: "Prostep" },
   { href: "/contact", label: "Contact" },
+  { href: "/useful-links", label: "Useful Links" }
 ];
 
 export default function Navbar() {

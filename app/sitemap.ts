@@ -29,6 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/farm-consultancy`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/prostep`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -57,6 +63,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: "monthly",
         priority: 0.9,
+    },
+    {
+        url: `${baseUrl}/useful-links`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.6,
     },
   ];
 }

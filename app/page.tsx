@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ClientsSection from "@/components/ClientsSection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -6,9 +7,13 @@ import SectionIntro from "@/components/SectionIntro";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Tim Bourke & Associates | Agricultural, Environmental & Equine Consultancy",
+  title:
+    "Tim Bourke & Associates | Agricultural, Environmental & Equine Consultancy",
   description:
     "Tim Bourke & Associates provides agricultural, environmental and equine consultancy in Cashel, Co. Tipperary, with Prostep supporting the equine market.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Home() {
@@ -27,32 +32,33 @@ export default function Home() {
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           <Link
-            href="/services"
-            className="rounded-3xl border border-stone-200 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-          >
-            <h3 className="text-xl font-semibold">Agricultural & Farm</h3>
-            <p className="mt-3 text-stone-600">
-              Farm planning, schemes, business performance and advisory support.
-            </p>
-          </Link>
-
-          <Link
-            href="/services"
-            className="rounded-3xl border border-stone-200 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-          >
-            <h3 className="text-xl font-semibold">Environmental</h3>
-            <p className="mt-3 text-stone-600">
-              Compliance, nitrates planning and environmental consultancy.
-            </p>
-          </Link>
-
-          <Link
             href="/equine-services"
             className="rounded-3xl border border-stone-200 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
           >
             <h3 className="text-xl font-semibold">Equine Services</h3>
             <p className="mt-3 text-stone-600">
-              Nutrition, feed programmes and grassland support for horses.
+              Nutrition, feed programmes, forage assessment and grassland
+              support.
+            </p>
+          </Link>
+
+          <Link
+            href="/prostep"
+            className="rounded-3xl border border-stone-200 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <h3 className="text-xl font-semibold">Prostep</h3>
+            <p className="mt-3 text-stone-600">
+              Bespoke supplements for the equine market and future online sales.
+            </p>
+          </Link>
+
+          <Link
+            href="/farm-consultancy"
+            className="rounded-3xl border border-stone-200 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <h3 className="text-xl font-semibold">Farm Consultancy</h3>
+            <p className="mt-3 text-stone-600">
+              Farm planning, schemes, compliance and business support.
             </p>
           </Link>
         </div>
@@ -115,6 +121,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ClientsSection />
 
       <section className="bg-green-700">
         <div className="mx-auto max-w-6xl px-6 py-20 text-white">
