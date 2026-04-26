@@ -27,24 +27,24 @@ export default function ContactPage() {
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="rounded-3xl border border-stone-200 bg-stone-50 p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold">Contact Details</h2>
+            <h2 className="font-serif text-2xl font-semibold">Contact Details</h2>
             <div className="mt-6 space-y-4 text-stone-700">
               <p>Cashel, Co. Tipperary</p>
               <p>
                 Office:{" "}
-                <a href="tel:06263122" className="hover:text-green-700">
+                <a href="tel:06263122" className="hover:text-emerald-800">
                   (062) 63122
                 </a>
               </p>
               <p>
                 Mobile:{" "}
-                <a href="tel:0862568114" className="hover:text-green-700">
+                <a href="tel:0862568114" className="hover:text-emerald-800">
                   (086) 2568114
                 </a>
               </p>
               <p>
                 Email:{" "}
-                <a href="mailto:tim@prostep.ie" className="hover:text-green-700">
+                <a href="mailto:tim@prostep.ie" className="hover:text-emerald-800">
                   tim@prostep.ie
                 </a>
               </p>

@@ -105,7 +105,7 @@ export default function FarmConsultantTipperaryPage() {
               <div className="mt-6 flex flex-col gap-4 sm:flex-row">
                 <Link
                   href="/contact"
-                  className="rounded-xl bg-green-700 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-800"
+                  className="rounded-xl bg-emerald-800 px-6 py-3 text-center font-semibold text-white transition hover:bg-emerald-900"
                 >
                   Send an Enquiry
                 </Link>

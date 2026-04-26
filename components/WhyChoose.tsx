@@ -9,10 +9,10 @@ export default function WhyChoose() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24">
       <div className="max-w-2xl">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
           Website Goals
         </p>
-        <h2 className="mt-3 text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
+        <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
           Built around the outcomes the business wants
         </h2>
         <p className="mt-4 text-lg leading-8 text-stone-700">

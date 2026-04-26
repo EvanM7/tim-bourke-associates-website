@@ -9,8 +9,8 @@ export default function ContactForm() {
 
   if (state.succeeded) {
     return (
-      <div className="rounded-3xl border border-green-200 bg-green-50 p-8 shadow-sm">
-        <h2 className="text-2xl font-semibold text-stone-900">
+      <div className="rounded-3xl border border-emerald-200 bg-emerald-50 p-8 shadow-sm">
+        <h2 className="font-serif text-2xl font-semibold text-stone-900">
           Enquiry sent
         </h2>
         <p className="mt-4 leading-7 text-stone-700">
@@ -26,7 +26,7 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm"
     >
-      <h2 className="text-2xl font-semibold text-stone-900">
+      <h2 className="font-serif text-2xl font-semibold text-stone-900">
         Send an enquiry
       </h2>
 
@@ -43,7 +43,7 @@ export default function ContactForm() {
             name="name"
             type="text"
             required
-            className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-green-700"
+            className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-emerald-800"
             placeholder="Your name"
           />
           <ValidationError
@@ -66,7 +66,7 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-green-700"
+            className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-emerald-800"
             placeholder="Your email address"
           />
           <ValidationError
@@ -88,7 +88,7 @@ export default function ContactForm() {
             id="phone"
             name="phone"
             type="tel"
-            className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-green-700"
+            className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-emerald-800"
             placeholder="Your phone number"
           />
           <ValidationError
@@ -111,7 +111,7 @@ export default function ContactForm() {
             name="service"
             required
             defaultValue=""
-            className="w-full rounded-xl border border-stone-300 bg-white px-4 py-3 outline-none transition focus:border-green-700"
+            className="w-full rounded-xl border border-stone-300 bg-white px-4 py-3 outline-none transition focus:border-emerald-800"
           >
             <option value="" disabled>
               Select an enquiry type
@@ -145,7 +145,7 @@ export default function ContactForm() {
             name="message"
             rows={6}
             required
-            className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-green-700"
+            className="w-full rounded-xl border border-stone-300 px-4 py-3 outline-none transition focus:border-emerald-800"
             placeholder="Tell us how we can help"
           />
           <ValidationError
@@ -159,7 +159,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={state.submitting || !formId}
-          className="rounded-xl bg-green-700 px-6 py-3 font-semibold text-white transition hover:bg-green-800 disabled:cursor-not-allowed disabled:opacity-60"
+          className="rounded-xl bg-emerald-800 px-6 py-3 font-semibold text-white transition hover:bg-emerald-900 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {state.submitting ? "Sending..." : "Send Enquiry"}
         </button>

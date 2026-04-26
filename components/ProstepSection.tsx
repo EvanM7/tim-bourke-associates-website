@@ -3,10 +3,10 @@ export default function ProstepSection() {
     <section id="prostep" className="bg-[#f7f7f2]">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-24 md:grid-cols-2 md:items-center">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
             Prostep
           </p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
             Bespoke supplements for the equine industry
           </h2>
           <p className="mt-4 text-lg leading-8 text-stone-700">
@@ -19,7 +19,7 @@ export default function ProstepSection() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href="/contact"
-              className="rounded-xl bg-green-700 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-800"
+              className="rounded-xl bg-emerald-800 px-6 py-3 text-center font-semibold text-white transition hover:bg-emerald-900"
             >
               Enquire About Prostep
             </a>

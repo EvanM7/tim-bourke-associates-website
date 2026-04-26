@@ -3,79 +3,109 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#f7f7f2]">
-      <div className="mx-auto grid max-w-6xl gap-14 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
-        <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
-            Tim Bourke & Associates · Cashel, Co. Tipperary
+    <section className="relative isolate overflow-hidden bg-stone-950">
+      {/* Background image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/horses-field.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-r from-stone-950/85 via-stone-950/65 to-stone-950/30"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"
+        />
+      </div>
+
+      <div className="mx-auto max-w-6xl px-6 pt-24 pb-32 md:pt-32 md:pb-40">
+        <div className="max-w-3xl text-white">
+          <p className="tba-fade-up text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200">
+            Established 1996 &middot; Killastafford, Cashel, Co. Tipperary
           </p>
 
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl md:text-6xl md:leading-[1.05]">
-            Agricultural, Environmental & Equine Consultancy
+          <h1 className="tba-fade-up-delay-1 mt-6 font-serif text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-[64px]">
+            Practical advice for farms, stud farms and the equine industry.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-700">
-            Supporting farmers, landowners and stud farm owners with practical,
-            results-driven advice. Prostep also provides bespoke supplements for
-            the equine industry.
+          <p className="tba-fade-up-delay-2 mt-7 max-w-2xl text-lg leading-8 text-stone-100/90 md:text-xl md:leading-9">
+            Tim Bourke &amp; Associates supports farmers, landowners and stud
+            farm owners with results-driven consultancy &mdash; backed by 30
+            years of agronomic and nutritional expertise. Prostep extends that
+            work into bespoke supplements for the equine market.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="tba-fade-up-delay-3 mt-9 flex flex-col gap-4 sm:flex-row">
             <Link
               href="/contact"
-              className="rounded-xl bg-green-700 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-800"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-center font-semibold text-emerald-900 shadow-lg shadow-black/20 transition hover:bg-emerald-50"
             >
               Request a Consultation
+              <span aria-hidden="true">&rarr;</span>
             </Link>
 
             <a
               href="tel:0862568114"
-              className="rounded-xl border border-stone-300 bg-white px-6 py-3 text-center font-semibold text-stone-900 transition hover:bg-stone-100"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/5 px-7 py-3.5 text-center font-semibold text-white backdrop-blur transition hover:bg-white/15"
             >
-              Call Now
+              Call (086) 256 8114
             </a>
           </div>
-
-          <div className="mt-10 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-stone-200 bg-white p-4 shadow-sm">
-              <p className="text-sm font-medium text-stone-500">Location</p>
-              <p className="mt-1 font-semibold text-stone-900">Cashel</p>
-            </div>
-
-            <div className="rounded-2xl border border-stone-200 bg-white p-4 shadow-sm">
-              <p className="text-sm font-medium text-stone-500">Clients</p>
-              <p className="mt-1 font-semibold text-stone-900">Farm & Equine</p>
-            </div>
-
-            <div className="rounded-2xl border border-stone-200 bg-white p-4 shadow-sm">
-              <p className="text-sm font-medium text-stone-500">Prostep</p>
-              <p className="mt-1 font-semibold text-stone-900">Supplements</p>
-            </div>
-          </div>
         </div>
+      </div>
 
-        <div className="relative">
-          <div className="relative overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-xl">
-            <Image
-              src="/farm-placeholder.jpg"
-              alt="Agricultural and equine consultancy"
-              width={1200}
-              height={900}
-              className="h-[420px] w-full object-cover"
-              priority
+      {/* Stats / trust strip */}
+      <div className="relative">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="-mb-12 grid divide-x divide-stone-200 overflow-hidden rounded-2xl border border-stone-200 bg-white/95 shadow-xl backdrop-blur sm:grid-cols-2 lg:grid-cols-4">
+            <Stat label="Years of experience" value="30+" sub="Founded 1996" />
+            <Stat
+              label="Sectors served"
+              value="Farm &amp; Equine"
+              sub="Across Ireland"
             />
-          </div>
-
-          <div className="absolute -bottom-6 left-6 max-w-xs rounded-2xl border border-stone-200 bg-white p-5 shadow-lg">
-            <p className="text-sm font-medium text-stone-500">
-              Consultancy + Prostep
-            </p>
-            <p className="mt-1 text-lg font-semibold text-stone-900">
-              Advice and products under one brand
-            </p>
+            <Stat
+              label="Bloodstock pedigree"
+              value="Group&nbsp;1 winners"
+              sub="Stud farm clients"
+            />
+            <Stat
+              label="Prostep products"
+              value="Dept of Ag approved"
+              sub="Tailor-made supplements"
+            />
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function Stat({
+  label,
+  value,
+  sub,
+}: {
+  label: string;
+  value: string;
+  sub: string;
+}) {
+  return (
+    <div className="px-6 py-6">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-800">
+        {label}
+      </p>
+      <p
+        className="mt-2 font-serif text-2xl font-semibold tracking-tight text-stone-900"
+        dangerouslySetInnerHTML={{ __html: value }}
+      />
+      <p className="mt-1 text-sm text-stone-500">{sub}</p>
+    </div>
   );
 }

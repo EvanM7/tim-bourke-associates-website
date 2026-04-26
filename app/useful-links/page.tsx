@@ -47,10 +47,10 @@ export default function UsefulLinksPage() {
               key={link.title}
               className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm"
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
                 External Resource
               </p>
-              <h2 className="mt-3 text-2xl font-bold tracking-tight text-stone-900">
+              <h2 className="mt-3 font-serif text-2xl font-semibold tracking-tight text-stone-900">
                 {link.title}
               </h2>
               <p className="mt-4 leading-7 text-stone-700">
@@ -61,7 +61,7 @@ export default function UsefulLinksPage() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-block rounded-xl bg-green-700 px-6 py-3 font-semibold text-white transition hover:bg-green-800"
+                className="mt-6 inline-block rounded-xl bg-emerald-800 px-6 py-3 font-semibold text-white transition hover:bg-emerald-900"
               >
                 {link.buttonText}
               </a>
@@ -73,10 +73,10 @@ export default function UsefulLinksPage() {
       <section className="bg-[#f7f7f2]">
         <div className="mx-auto max-w-5xl px-6 py-20">
           <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
               Need Advice?
             </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-stone-900">
+            <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-stone-900">
               Speak with Tim Bourke & Associates
             </h2>
             <p className="mt-4 max-w-3xl leading-7 text-stone-700">
@@ -87,7 +87,7 @@ export default function UsefulLinksPage() {
             <div className="mt-6 flex flex-col gap-4 sm:flex-row">
               <a
                 href="/contact"
-                className="rounded-xl bg-green-700 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-800"
+                className="rounded-xl bg-emerald-800 px-6 py-3 text-center font-semibold text-white transition hover:bg-emerald-900"
               >
                 Send an Enquiry
               </a>

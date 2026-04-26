@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
 });
 
 const schema = {
@@ -14,17 +21,19 @@ const schema = {
   alternateName: "Prostep",
   url: "https://prostep.ie",
   email: "tim@prostep.ie",
-  telephone: "(062) 63122",
+  telephone: "+353-62-63122",
+  foundingDate: "1996",
   areaServed: ["Tipperary", "Ireland"],
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Killastafford",
     addressLocality: "Cashel",
     addressRegion: "Co. Tipperary",
     addressCountry: "IE",
   },
   sameAs: [],
   description:
-    "Tim Bourke & Associates provides agricultural, environmental, equine and farm consultancy services in Cashel, Co. Tipperary, including Prostep supplements for the equine market.",
+    "Tim Bourke & Associates provides agricultural, environmental, equine and farm consultancy services in Cashel, Co. Tipperary, including Prostep supplements for the equine market. Established in 1996.",
   knowsAbout: [
     "Agricultural Consultancy",
     "Environmental Consultancy",
@@ -33,6 +42,7 @@ const schema = {
     "Horse Nutrition",
     "Supplements",
     "Stud Farm Support",
+    "Bloodstock Nutrition",
   ],
 };
 
@@ -64,7 +74,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.variable}>
+      <body className={`${inter.variable} ${playfair.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

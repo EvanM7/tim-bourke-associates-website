@@ -65,10 +65,10 @@ export default function EquineServicesPage() {
           </div>
 
           <div className="p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
               Equine Services
             </p>
-            <h2 className="mt-3 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            <h2 className="mt-3 font-serif text-2xl font-semibold tracking-tight text-stone-900 sm:text-3xl">
               Specialist support for horse owners and stud farms
             </h2>
             <p className="mt-4 max-w-3xl leading-7 text-stone-700">
@@ -84,10 +84,10 @@ export default function EquineServicesPage() {
       {/* Jump links */}
       <section className="mx-auto max-w-5xl px-6 py-4">
         <div className="rounded-3xl border border-stone-200 bg-stone-50 p-8 shadow-sm">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
             Equine Service Areas
           </p>
-          <h2 className="mt-3 text-2xl font-bold tracking-tight text-stone-900">
+          <h2 className="mt-3 font-serif text-2xl font-semibold tracking-tight text-stone-900">
             Jump to a section
           </h2>
 
@@ -96,7 +96,7 @@ export default function EquineServicesPage() {
               <a
                 key={section.id}
                 href={`#${section.id}`}
-                className="rounded-2xl border border-stone-200 bg-white p-5 font-semibold text-stone-900 transition hover:border-green-700 hover:text-green-700"
+                className="rounded-2xl border border-stone-200 bg-white p-5 font-semibold text-stone-900 transition hover:border-emerald-800 hover:text-emerald-800"
               >
                 {section.title}
               </a>
@@ -114,10 +114,10 @@ export default function EquineServicesPage() {
             className="grid scroll-mt-28 items-center gap-8 rounded-3xl border border-stone-200 bg-white p-8 shadow-sm md:grid-cols-2"
           >
             <div className={index % 2 === 1 ? "md:order-2" : ""}>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
                 Equine Service
               </p>
-              <h2 className="mt-3 text-2xl font-bold text-stone-900">
+              <h2 className="mt-3 font-serif text-2xl font-semibold text-stone-900">
                 {section.title}
               </h2>
               <p className="mt-4 leading-relaxed text-stone-700">
@@ -143,10 +143,10 @@ export default function EquineServicesPage() {
       <section className="bg-[#f7f7f2]">
         <div className="mx-auto max-w-5xl px-6 py-20">
           <div className="rounded-3xl border border-stone-200 bg-white p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
               Get in Touch
             </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-stone-900">
+            <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-stone-900">
               Speak with Tim Bourke & Associates
             </h2>
             <p className="mt-4 max-w-3xl leading-7 text-stone-700">
@@ -158,7 +158,7 @@ export default function EquineServicesPage() {
             <div className="mt-6 flex flex-col gap-4 sm:flex-row">
               <a
                 href="/contact"
-                className="rounded-xl bg-green-700 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-800"
+                className="rounded-xl bg-emerald-800 px-6 py-3 text-center font-semibold text-white transition hover:bg-emerald-900"
               >
                 Send an Enquiry
               </a>
