@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Prostep | Equine Supplements by Tim Bourke & Associates",
   description:
-    "Prostep — bespoke equine supplements from Tim Bourke & Associates. Tailor-made products approved by the Department of Agriculture, Food and the Marine, used by stud farms producing Group 1 and classic race winners.",
+    "Prostep provides tailored equine nutritional assessment and bespoke supplement formulations for stud farms and horse owners.",
   alternates: {
     canonical: "/prostep",
   },
@@ -25,13 +25,13 @@ const pillars = [
     href: "#product-formulations",
   },
   {
-    title: "Department of Ag Approved",
-    text: "All Prostep products are fully approved by the Department of Agriculture, Food and the Marine.",
-    href: "#approved",
+    title: "Farm-specific Approach",
+    text: "Supplement recommendations are informed by each farm’s forage, water and other nutritional requirements.",
+    href: "#product-formulations",
   },
   {
     title: "Group 1 Track Record",
-    text: "The Prostep process is associated with horses that have gone on to win Group 1 and classic races.",
+    text: "Specialist experience with Irish and international stud farm nutrition.",
     href: "#track-record",
   },
 ];
@@ -138,7 +138,7 @@ export default function ProstepPage() {
                 {[
                   "Manufactured to a very high specification",
                   "Tailor-made to each farm's individual requirements",
-                  "Fully approved by the Department of Agriculture, Food and the Marine",
+                  "Formulated following nutritional assessment",
                   "Tried, tested and proven on stud farm operations",
                 ].map((item) => (
                   <li key={item} className="flex gap-3 text-stone-800">

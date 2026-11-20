@@ -17,7 +17,7 @@ const sections = [
   {
     id: "department-schemes",
     title: "Department Schemes",
-    text: "We are agents of the Department of Agriculture and approved facilitator for KT discussion groups. We complete and submit applications on behalf of clients for various schemes the department introduces from time to time.",
+    text: "Advice on agricultural support schemes and application preparation. The specific schemes available and eligibility requirements change over time; contact us to discuss your situation.",
     image: "/farm-placeholder.jpg",
   },
   {
@@ -34,8 +34,8 @@ const sections = [
   },
   {
     id: "cross-compliance-records",
-    title: "Cross Compliance & Records",
-    text: "To receive payment under a single payment scheme, farmers must follow a variety of environmental regulations, public health, plant health, animal welfare and land maintenance rules. We help clients manage these requirements and records clearly.",
+    title: "Farm Compliance & Records",
+    text: "Farmers must meet applicable environmental, animal-welfare and land-management obligations. We help clients organise records and understand relevant requirements.",
     image: "/farm-placeholder.jpg",
   },
   {
@@ -90,10 +90,7 @@ export default function FarmConsultancyPage() {
               Clear support across key farm business areas
             </h2>
             <p className="mt-4 max-w-3xl leading-7 text-stone-700">
-              This page brings together the core farm consultancy services from
-              Tim Bourke & Associates into one clear, modern structure. When the
-              client sends final images, each section below is ready for its own
-              dedicated photograph.
+              From planning an agricultural building to managing farm records and nutrient requirements, we provide practical advice tailored to individual operations.
             </p>
           </div>
         </div>

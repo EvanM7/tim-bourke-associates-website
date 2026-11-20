@@ -57,12 +57,8 @@ export default function Footer() {
               >
                 Prostep
               </Link>
-              <Link
-                href="/useful-links"
-                className="transition hover:text-emerald-800"
-              >
-                Useful Links
-              </Link>
+              <Link href="/projects" className="transition hover:text-emerald-800">Selected Projects</Link>
+              <Link href="/useful-links" className="transition hover:text-emerald-800">Useful Links</Link>
               <Link
                 href="/contact"
                 className="transition hover:text-emerald-800"
