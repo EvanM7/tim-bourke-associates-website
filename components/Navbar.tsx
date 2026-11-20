@@ -74,12 +74,9 @@ export default function Navbar() {
             className="flex items-center gap-2 text-stone-900"
             onClick={() => setIsOpen(false)}
           >
-            <span
-              aria-hidden="true"
-              className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-900 font-serif text-base font-semibold text-white"
-            >
-              T
-            </span>
+            <span aria-hidden="true" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-50 p-1 ring-1 ring-emerald-900/15">
+                <img src="/logo-mark.svg" alt="" width="32" height="32" className="h-8 w-8 object-contain" />
+              </span>
             <span className="flex flex-col leading-tight">
               <span className="font-serif text-base font-semibold tracking-tight sm:text-lg">
                 Tim Bourke &amp; Associates
