@@ -1,30 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-stone-950">
-      {/* Background image */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/horses-field.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-stone-950/85 via-stone-950/65 to-stone-950/30"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"
-        />
-      </div>
+    <section className="relative isolate overflow-hidden bg-gradient-to-br from-emerald-950 via-[#124636] to-stone-950">
+      {/* A crisp, image-free hero until suitable original equine photography is supplied. */}
+      <div aria-hidden="true" className="pointer-events-none absolute -right-32 -top-48 h-[600px] w-[600px] rounded-full border border-emerald-100/10" />
+      <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-24 h-[420px] w-[420px] rounded-full border border-emerald-100/10" />
+      <div aria-hidden="true" className="pointer-events-none absolute bottom-0 right-0 h-[360px] w-[45%] bg-gradient-to-tl from-emerald-400/10 to-transparent" />
 
-      <div className="mx-auto max-w-6xl px-6 pt-24 pb-32 md:pt-32 md:pb-40">
+      <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-32 md:pt-32 md:pb-40">
         <div className="max-w-3xl text-white">
           <p className="tba-fade-up text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200">
             Established 1996 &middot; Killastafford, Cashel, Co. Tipperary

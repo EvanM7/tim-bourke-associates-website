@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -28,15 +27,12 @@ export default function AboutPage() {
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid items-center gap-14 md:grid-cols-2">
           <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-stone-200 bg-stone-100 shadow-xl">
-              <Image
-                src="/farm-placeholder.jpg"
-                alt="Tipperary farmland"
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
+            <div className="flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#123d2d] to-emerald-900 p-10 text-white shadow-xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-200">Tim Bourke &amp; Associates</p>
+              <div>
+                <p className="font-serif text-[clamp(5rem,12vw,9rem)] font-semibold leading-none tracking-tight text-emerald-100">1996</p>
+                <p className="mt-6 max-w-sm font-serif text-2xl leading-snug">Independent agricultural and equine consultancy, rooted in Cashel.</p>
+              </div>
             </div>
             <div className="absolute -bottom-6 -right-4 max-w-[260px] rounded-2xl border border-stone-200 bg-white p-5 shadow-xl">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-800">

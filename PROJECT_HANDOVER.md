@@ -6,7 +6,7 @@ This Next.js website is the **replacement prototype**, not yet the live website 
 
 - Added a **Selected Projects** page and a homepage feature linking to it.
 - Added the **County Limerick cattle unit** example: planning by Tim Bourke, construction by Dillon Contractors (Tim's email, 8 September 2026).
-- Added a description of **specialist livestock mineral advice**. Tim provided a Con Marnane client video, but the video has not yet been published.
+- Added a description of **specialist livestock mineral advice**. Tim's Con Marnane client video and three edited cattle-unit photographs have been added to the prototype.
 - Removed unfinished client placeholder logos and the quote formatted as a testimonial.
 - Simplified the primary navigation and expanded footer access to Projects.
 - Removed internal draft/editor language and updated legacy scheme terminology.
@@ -31,7 +31,8 @@ Tim said he would send testimonials. **No testimonials should be invented or pub
 
 - [ ] Confirm current services, product claims and licensing/approvals with Tim.
 - [ ] Confirm any named clients/logos, photo and video publication permission.
-- [ ] Add vetted project media and approved testimonials.
+- [x] Add the three supplied cattle-unit photographs and Con Marnane video to the prototype.
+- [ ] Add client-approved testimonials, when available.
 - [ ] Test the contact form end to end: `NEXT_PUBLIC_FORMSPREE_FORM_ID` must be configured and the recipient must be correct.
 - [ ] Check desktop/mobile layout, keyboard use, accessibility and performance.
 - [ ] Confirm DNS registrar, current host, domain ownership and email MX records.
@@ -60,3 +61,15 @@ Vercel previews are automatically created from GitHub branch pushes. Merge only 
 - Added visible focus states and reduced-motion support.
 
 **Still to verify before launching on prostep.ie:** live Formspree delivery and recipient, Tim's approval of services/claims, client video permission, and domain/email migration.
+
+## Image quality pass (20 November 2026)
+
+- Removed the repeatedly used low-resolution horse photo from the homepage hero, homepage equine section, and Equine Services introduction.
+- Replaced the homepage hero with a clean emerald gradient and understated graphic accents.
+- Replaced two other horse-image placements with service-specific, text-led panels.
+- Used Tim's real Limerick project photograph in the homepage About section and Farm Consultancy introduction.
+- Replaced the generic About page photograph with an established-1996 graphic pending a real headshot of Tim.
+- Removed the stock-image backdrop from the homepage final call to action.
+- Added a plain-language title immediately above the Con Marnane video.
+
+**Request from Tim:** ideally one good headshot, 3–5 original high-resolution equine/stud farm photographs, approved testimonials and permission to publish named client projects. None of these are required to give Tim the prototype for review.
