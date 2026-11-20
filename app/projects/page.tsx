@@ -30,7 +30,7 @@ export default function ProjectsPage() {
             <div className="bg-stone-800 p-8 text-stone-100"><p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">Livestock nutrition</p><h2 className="mt-3 font-serif text-3xl font-semibold text-white">Specialist mineral supplementation</h2></div>
             <div className="p-8">
               <p className="leading-8 text-stone-700">Individual livestock operations can require tailored nutritional advice. Tim Bourke has provided specialist mineral lick recommendations to clients, including work documented for client Con Marnane.</p>
-              <p className="mt-4 leading-7 text-stone-600">A client video and further detail will be added following media and publication review.</p>
+              
               <Link href="/contact" className="mt-8 inline-flex font-semibold text-emerald-800 hover:underline">Discuss livestock nutrition <span aria-hidden="true" className="ml-2">&rarr;</span></Link>
             </div>
           </article>

@@ -1,0 +1,50 @@
+# Tim Bourke & Associates — website improvement and launch notes
+
+This Next.js website is the **replacement prototype**, not yet the live website at `prostep.ie`.
+
+## November 2026 improvements
+
+- Added a **Selected Projects** page and a homepage feature linking to it.
+- Added the **County Limerick cattle unit** example: planning by Tim Bourke, construction by Dillon Contractors (Tim's email, 8 September 2026).
+- Added a description of **specialist livestock mineral advice**. Tim provided a Con Marnane client video, but the video has not yet been published.
+- Removed unfinished client placeholder logos and the quote formatted as a testimonial.
+- Simplified the primary navigation and expanded footer access to Projects.
+- Removed internal draft/editor language and updated legacy scheme terminology.
+- Softened approval and racing performance claims that require confirmation.
+- Added the new route to the sitemap and disabled indexing until deliberate launch.
+
+## Media requests from Tim (8 September 2026)
+
+Tim emailed three JPEG photos: `IMG_5730.JPG`, `IMG_5728.JPG`, `IMG_5721.JPG`.
+He asked that text at the bottom of **the last two pictures he sent** be removed. Before publishing:
+1. Confirm the photos relate to the Limerick cattle unit.
+2. Make clean copies, without altering or misrepresenting the structure shown.
+3. Confirm image publication rights and the client/contractor credit.
+4. Add accessible descriptions and responsive image sizes to the Projects page.
+
+Tim also sent `VIDEO-2026-08-19-07-41-50.mp4` showing client Con Marnane with specialist mineral licks.
+Confirm client permission and suitability for public release before embedding it.
+
+Tim said he would send testimonials. **No testimonials should be invented or published without approval.**
+
+## Prelaunch checklist
+
+- [ ] Confirm current services, product claims and licensing/approvals with Tim.
+- [ ] Confirm any named clients/logos, photo and video publication permission.
+- [ ] Add vetted project media and approved testimonials.
+- [ ] Test the contact form end to end: `NEXT_PUBLIC_FORMSPREE_FORM_ID` must be configured and the recipient must be correct.
+- [ ] Check desktop/mobile layout, keyboard use, accessibility and performance.
+- [ ] Confirm DNS registrar, current host, domain ownership and email MX records.
+- [ ] Set `NEXT_PUBLIC_SITE_LIVE=true` **only after** migration to `prostep.ie`, to enable search indexing.
+- [ ] Review redirects from the existing site and submit the sitemap after launch.
+- [ ] Confirm client ownership and content-maintenance arrangement.
+
+## Development
+
+```bash
+npm ci
+npm run lint
+npm run build
+```
+
+Vercel previews are automatically created from GitHub branch pushes. Merge only after review; production deployment remains linked to the main branch.

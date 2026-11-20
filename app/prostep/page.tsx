@@ -138,7 +138,7 @@ export default function ProstepPage() {
                 {[
                   "Manufactured to a very high specification",
                   "Tailor-made to each farm's individual requirements",
-                  "Fully approved by the Department of Agriculture, Food and the Marine",
+                  "Formulated for individual farm requirements",
                   "Tried, tested and proven on stud farm operations",
                 ].map((item) => (
                   <li key={item} className="flex gap-3 text-stone-800">
