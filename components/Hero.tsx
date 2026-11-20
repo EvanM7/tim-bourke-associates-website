@@ -72,13 +72,13 @@ export default function Hero() {
             />
             <Stat
               label="Bloodstock pedigree"
-              value="Group&nbsp;1 winners"
-              sub="Stud farm clients"
+              value="Stud farms"
+              sub="Equine consultancy"
             />
             <Stat
               label="Prostep products"
-              value="Dept of Ag approved"
-              sub="Tailor-made supplements"
+              value="Prostep"
+              sub="Tailored nutrition"
             />
           </div>
         </div>

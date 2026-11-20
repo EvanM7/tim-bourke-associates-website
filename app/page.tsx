@@ -29,7 +29,7 @@ const homeServices = [
     href: "/prostep",
     title: "Prostep",
     description:
-      "Bespoke supplements for the equine market, fully approved by the Department of Agriculture, Food and the Marine.",
+      "Specialist equine nutrition and tailored supplement programmes based on individual farm requirements.",
     eyebrow: "Supplements",
   },
   {
@@ -263,8 +263,7 @@ export default function Home() {
                 imbalances in the diet of horses and provides practical
                 solutions so they grow and mature in the best possible way
                 &mdash; helping potential ability come through on the race
-                track. Products are tailor-made to each farm and fully approved
-                by the Department of Agriculture, Food and the Marine.
+                track. Products are tailored to the nutritional needs identified for each farm.
               </p>
 
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -290,7 +289,7 @@ export default function Home() {
                 title="Tailor-made"
                 sub="Manufactured for each farm"
               />
-              <Badge title="Dept of Ag approved" sub="Food &amp; the Marine" />
+              <Badge title="Farm specific" sub="Nutrition-led advice" />
               <Badge
                 title="Group&nbsp;1 pedigree"
                 sub="Associated with classic winners"
@@ -299,6 +298,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="bg-white"><div className="mx-auto max-w-6xl px-6 py-20"><div className="grid items-center gap-10 rounded-[2rem] bg-stone-100 p-8 md:grid-cols-2 md:p-14"><div><p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-800">Selected work</p><h2 className="mt-3 font-serif text-4xl font-semibold tracking-tight text-stone-900">Planning and nutrition advice in practice.</h2><p className="mt-5 leading-8 text-stone-700">Explore examples of agricultural building planning and specialist livestock nutrition work, including a cattle facility in County Limerick planned by Tim Bourke.</p><Link href="/projects" className="mt-7 inline-flex items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 font-semibold text-white hover:bg-emerald-900">View selected projects <span aria-hidden="true">&rarr;</span></Link></div><div className="grid gap-4"><div className="rounded-2xl bg-white p-7"><p className="text-xs font-semibold uppercase tracking-widest text-emerald-800">Farm buildings</p><h3 className="mt-2 font-serif text-2xl font-semibold">Limerick cattle unit</h3><p className="mt-2 leading-7 text-stone-600">Planning: Tim Bourke. Construction: Dillon Contractors.</p></div><div className="rounded-2xl bg-white p-7"><p className="text-xs font-semibold uppercase tracking-widest text-emerald-800">Livestock nutrition</p><h3 className="mt-2 font-serif text-2xl font-semibold">Tailored mineral programmes</h3><p className="mt-2 leading-7 text-stone-600">Practical advice informed by individual farm needs.</p></div></div></div></div></section>
 
       <ClientsSection />
 

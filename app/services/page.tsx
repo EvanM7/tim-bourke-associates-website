@@ -22,7 +22,7 @@ const agriculturalServices = [
 ];
 
 const environmentalServices = [
-  "Cross Compliance & Records",
+  "Farm Compliance & Records",
   "Nitrates & Fertiliser Plans",
   "Environmental Consultancy",
   "Farm Planning Support",
@@ -43,7 +43,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Practical agricultural, environmental and equine consultancy services"
-        description="Tim Bourke & Associates provides a broad range of consultancy services for farmers, landowners, rural businesses, stud farms and clients in the wider equine industry. The goal of the new website is to present these services clearly and make it easier for potential clients to get in touch."
+        description="Tim Bourke & Associates provides a broad range of consultancy services for farmers, landowners, rural businesses, stud farms and clients in the wider equine industry. Contact us to discuss the type of support your business requires."
       />
 
       <section className="mx-auto max-w-6xl px-6 py-20">

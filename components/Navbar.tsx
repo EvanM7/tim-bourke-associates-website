@@ -1,17 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/equine-services", label: "Equine Services" },
   { href: "/farm-consultancy", label: "Farm Consultancy" },
+  { href: "/equine-services", label: "Equine Services" },
   { href: "/prostep", label: "Prostep" },
-  { href: "/useful-links", label: "Useful Links" },
+  { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact" },
 ];
 
