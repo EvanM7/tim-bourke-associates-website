@@ -1,28 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-stone-950">
-      {/* Background image */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/horses-field.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-stone-950/85 via-stone-950/65 to-stone-950/30"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"
-        />
-      </div>
+    <section className="relative isolate overflow-hidden bg-gradient-to-br from-emerald-950 via-[#123e32] to-stone-950">
+      {/* Intentional image-free brand treatment until approved photography is available. */}
+      <div aria-hidden="true" className="pointer-events-none absolute -right-32 -top-44 h-[38rem] w-[38rem] rounded-full border border-emerald-200/15" />
+      <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-24 h-[28rem] w-[28rem] rounded-full border border-emerald-200/10" />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.16) 0.7px, transparent 0.7px)", backgroundSize: "24px 24px" }} />
 
       <div className="mx-auto max-w-6xl px-6 pt-24 pb-32 md:pt-32 md:pb-40">
         <div className="max-w-3xl text-white">
@@ -36,9 +20,9 @@ export default function Hero() {
 
           <p className="tba-fade-up-delay-2 mt-7 max-w-2xl text-lg leading-8 text-stone-100/90 md:text-xl md:leading-9">
             Tim Bourke &amp; Associates supports farmers, landowners and stud
-            farm owners with results-driven consultancy &mdash; backed by 30
-            years of agronomic and nutritional expertise. Prostep extends that
-            work into bespoke supplements for the equine market.
+            farm owners with practical agricultural and nutritional advice.
+            Established in 1996, the consultancy also supports the equine
+            sector through specialist Prostep programmes.
           </p>
 
           <div className="tba-fade-up-delay-3 mt-9 flex flex-col gap-4 sm:flex-row">
