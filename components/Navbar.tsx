@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navItems = [
@@ -76,7 +75,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             <span aria-hidden="true" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-50 p-1 ring-1 ring-emerald-900/15">
-                <Image src="/logo-mark.svg" alt="" width={32} height={32} className="h-8 w-8 object-contain" />
+                <span className="block h-8 w-8 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: 'url("/favicon.ico")' }} />
               </span>
             <span className="flex flex-col leading-tight">
               <span className="font-serif text-base font-semibold tracking-tight sm:text-lg">
