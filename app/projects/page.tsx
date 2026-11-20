@@ -95,6 +95,7 @@ export default function ProjectsPage() {
               </p>
               {hasVideo && (
                 <figure className="mt-7">
+                  <p className="mb-3 text-sm font-semibold text-stone-800">Client video: mineral supplementation in practice</p>
                   <video controls preload="metadata" playsInline className="w-full rounded-2xl bg-stone-900"
                     aria-label="Video of Con Marnane's livestock mineral licks">
                     <source src={videoSrc} type="video/mp4" />

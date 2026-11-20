@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PageHero from "@/components/PageHero";
@@ -50,14 +49,13 @@ export default function EquineServicesPage() {
       {/* Main image */}
       <section className="mx-auto max-w-5xl px-6 py-12">
         <div className="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm">
-          <div className="relative h-[280px] w-full sm:h-[360px] md:h-[440px]">
-            <Image
-              src="/horses-field.jpg"
-              alt="Equine services overview"
-              fill
-              priority
-              className="object-cover"
-            />
+          <div className="grid gap-5 bg-gradient-to-r from-emerald-950 to-emerald-800 p-7 text-white sm:grid-cols-3 sm:p-10">
+            {["Nutritional assessment", "Tailored feed advice", "Pasture management"].map((service, index) => (
+              <div key={service} className="rounded-2xl border border-white/15 bg-white/5 p-5">
+                <p className="font-serif text-4xl text-emerald-200">{String(index + 1).padStart(2, "0")}</p>
+                <p className="mt-4 font-medium leading-6">{service}</p>
+              </div>
+            ))}
           </div>
 
           <div className="p-8">

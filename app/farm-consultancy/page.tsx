@@ -67,8 +67,8 @@ export default function FarmConsultancyPage() {
         <div className="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm">
           <div className="relative h-[280px] w-full sm:h-[360px] md:h-[440px]">
             <Image
-              src="/farm-placeholder.jpg"
-              alt="Farm consultancy overview"
+              src="/projects/limerick-cattle-unit-exterior.jpg"
+              alt="Completed cattle unit in County Limerick, planned by Tim Bourke"
               fill
               priority
               className="object-cover"
@@ -83,7 +83,7 @@ export default function FarmConsultancyPage() {
               Clear support across key farm business areas
             </h2>
             <p className="mt-4 max-w-3xl leading-7 text-stone-700">
-              From planning an agricultural building to managing farm records and nutrient requirements, we provide practical advice tailored to individual operations.
+              From planning agricultural buildings to managing farm records and nutrient requirements, we provide practical advice tailored to individual operations. The building pictured is a cattle unit in County Limerick planned by Tim Bourke and constructed by Dillon Contractors.
             </p>
           </div>
         </div>

@@ -93,8 +93,8 @@ export default function Home() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-stone-200 bg-stone-100 shadow-xl">
               <Image
-                src="/farm-placeholder.jpg"
-                alt="Tipperary farmland — Tim Bourke & Associates"
+                src="/projects/limerick-cattle-unit-exterior.jpg"
+                alt="Cattle unit in County Limerick planned by Tim Bourke"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -168,14 +168,19 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid items-center gap-14 md:grid-cols-2">
             <div className="relative order-2 md:order-1">
-              <div className="relative aspect-[5/6] overflow-hidden rounded-[2rem] border border-stone-200 bg-stone-100 shadow-xl">
-                <Image
-                  src="/horses-field.jpg"
-                  alt="Stud farm in Tipperary"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                />
+              <div className="flex min-h-[420px] flex-col justify-between overflow-hidden rounded-[2rem] bg-gradient-to-br from-emerald-950 to-emerald-800 p-9 text-white shadow-xl sm:p-12">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-200">Our approach</p>
+                  <h3 className="mt-5 font-serif text-3xl font-semibold leading-tight sm:text-4xl">Advice built around each farm.</h3>
+                </div>
+                <div className="space-y-5">
+                  {["Analyse forage, soil and water", "Identify nutritional requirements", "Develop practical, farm-specific recommendations"].map((item, index) => (
+                    <div key={item} className="flex items-start gap-4 border-t border-white/20 pt-4">
+                      <span className="font-serif text-2xl text-emerald-200">{String(index + 1).padStart(2, "0")}</span>
+                      <span className="pt-1 leading-7 text-emerald-50">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -305,19 +310,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-stone-950 text-white">
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="/farm-placeholder.jpg"
-            alt=""
-            fill
-            sizes="100vw"
-            className="object-cover opacity-30"
-          />
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-r from-stone-950/95 via-stone-950/85 to-stone-950/70"
-          />
-        </div>
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-stone-950 via-emerald-950 to-stone-950" />
 
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="max-w-2xl">
