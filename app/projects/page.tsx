@@ -68,7 +68,7 @@ export default function ProjectsPage() {
                     ))}
                   </div>
                   <p className="mt-4 text-xs leading-5 text-stone-500">
-                    Photographs supplied by Tim Bourke. Project attribution and photo location should be confirmed before final public launch.
+                    Project photography supplied by Tim Bourke.
                   </p>
                 </div>
               )}

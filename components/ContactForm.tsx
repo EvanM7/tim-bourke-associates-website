@@ -164,13 +164,18 @@ export default function ContactForm() {
           {state.submitting ? "Sending..." : "Send Enquiry"}
         </button>
 
+        <p className="text-xs leading-5 text-stone-500">
+          We use the information provided to respond to your enquiry.
+          You can also email{" "}
+          <a href="mailto:tim@prostep.ie" className="font-medium text-emerald-800 underline">
+            tim@prostep.ie
+          </a>{" "}
+          directly.
+        </p>
+        <ValidationError errors={state.errors} className="text-sm text-red-700" />
         {!formId && (
-          <p className="text-sm text-red-600">
-            Form is not configured yet. Add the Formspree form ID to
-            <code className="mx-1 rounded bg-stone-100 px-1 py-0.5">
-              .env.local
-            </code>
-            and restart the dev server.
+          <p role="status" className="text-sm text-stone-700">
+            The online form is temporarily unavailable. Please contact us by phone or email.
           </p>
         )}
       </div>

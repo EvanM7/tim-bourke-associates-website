@@ -291,8 +291,8 @@ export default function Home() {
               />
               <Badge title="Farm specific" sub="Nutrition-led advice" />
               <Badge
-                title="Group&nbsp;1 pedigree"
-                sub="Associated with classic winners"
+                title="Stud farm focus"
+                sub="Equine nutrition expertise"
               />
             </div>
           </div>
@@ -360,14 +360,8 @@ export default function Home() {
 function Badge({ title, sub }: { title: string; sub: string }) {
   return (
     <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur transition hover:border-white/30 hover:bg-white/10">
-      <p
-        className="font-serif text-lg font-semibold text-white"
-        dangerouslySetInnerHTML={{ __html: title }}
-      />
-      <p
-        className="mt-1 text-sm text-emerald-100/80"
-        dangerouslySetInnerHTML={{ __html: sub }}
-      />
+      <p className="font-serif text-lg font-semibold text-white">{title}</p>
+      <p className="mt-1 text-sm text-emerald-100/80">{sub}</p>
     </div>
   );
 }

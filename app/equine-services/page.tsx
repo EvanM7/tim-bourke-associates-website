@@ -18,25 +18,21 @@ const sections = [
     id: "nutrient-recommendations",
     title: "Nutrient Recommendations",
     text: "We perform detailed scientific analysis of soil, grass, animal tissue and water. By monitoring nutrient levels, we can compile recommendations specific to the farm or stud’s unique environment.",
-    image: "/soil sample.jpg",
   },
   {
     id: "feed-programmes",
     title: "Feed Programmes",
     text: "We design tailored feed programmes for mares, stallions, foals and young horses, helping support healthy development, performance and long-term wellbeing.",
-    image: "/farm-placeholder.jpg",
   },
   {
     id: "forage-diet-assessment",
     title: "Forage & Diet Assessment",
     text: "We carry out comprehensive diet analyses to identify major and minor nutrient imbalances. Forage samples are assessed to ensure horses are receiving high-quality nutrition capable of supporting growth and performance.",
-    image: "/farm-placeholder.jpg",
   },
   {
     id: "grassland-establishment-maintenance",
     title: "Grassland Establishment & Maintenance",
     text: "We provide detailed advice on suitable grassland reseeding and rejuvenation techniques. Soil nutrient profiles are assessed using sample analysis to help ensure balanced growth and optimal grass quality. This includes sustainable pasture management, rotational grazing, stocking rate guidance and reseeding strategies tailored to your land and usage.",
-    image: "/farm-placeholder.jpg",
   },
 ];
 
@@ -72,10 +68,9 @@ export default function EquineServicesPage() {
               Specialist support for horse owners and stud farms
             </h2>
             <p className="mt-4 max-w-3xl leading-7 text-stone-700">
-              This page brings together the core equine service areas from Tim
-              Bourke & Associates into one clear, modern structure. When the
-              client sends final images, each section below is ready for its own
-              dedicated photograph.
+              From pasture quality and forage analysis to tailored feed programmes,
+              our advice combines practical farm management with detailed
+              understanding of equine nutritional needs.
             </p>
           </div>
         </div>
@@ -106,12 +101,12 @@ export default function EquineServicesPage() {
       </section>
 
       {/* Sub-sections with images */}
-      <section className="mx-auto max-w-5xl space-y-16 px-6 py-12">
+      <section className="mx-auto max-w-5xl space-y-8 px-6 py-12">
         {sections.map((section, index) => (
           <div
             key={section.id}
             id={section.id}
-            className="grid scroll-mt-28 items-center gap-8 rounded-3xl border border-stone-200 bg-white p-8 shadow-sm md:grid-cols-2"
+            className="grid scroll-mt-28 items-center gap-8 rounded-3xl border border-stone-200 bg-white p-6 shadow-sm md:grid-cols-2 md:p-8"
           >
             <div className={index % 2 === 1 ? "md:order-2" : ""}>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
@@ -126,13 +121,14 @@ export default function EquineServicesPage() {
             </div>
 
             <div className={index % 2 === 1 ? "md:order-1" : ""}>
-              <div className="relative h-64 w-full overflow-hidden rounded-2xl border border-stone-200 bg-stone-100">
-                <Image
-                  src={section.image}
-                  alt={section.title}
-                  fill
-                  className="object-cover"
-                />
+              <div className="flex min-h-52 flex-col justify-between rounded-2xl bg-emerald-950 p-8 text-white">
+                <span className="font-serif text-6xl text-emerald-200/60" aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">Area of expertise</p>
+                  <p className="mt-2 font-serif text-2xl font-semibold">{section.title}</p>
+                </div>
               </div>
             </div>
           </div>

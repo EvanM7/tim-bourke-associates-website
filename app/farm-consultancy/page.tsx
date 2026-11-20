@@ -7,7 +7,7 @@ import PageHero from "@/components/PageHero";
 export const metadata: Metadata = {
   title: "Farm Consultancy | Tim Bourke & Associates",
   description:
-    "Farm consultancy services including Department Schemes, Analytical Advice, Farm Building Design, Cross Compliance, Nitrates & Fertiliser Plans and more in Tipperary.",
+    "Farm consultancy services including Department Schemes, Analytical Advice, Farm Building Design, Farm Compliance, Nitrates & Fertiliser Plans and more in Tipperary.",
   alternates: {
     canonical: "/farm-consultancy",
   },
@@ -18,43 +18,36 @@ const sections = [
     id: "department-schemes",
     title: "Department Schemes",
     text: "Advice on agricultural support schemes and application preparation. The specific schemes available and eligibility requirements change over time; contact us to discuss your situation.",
-    image: "/farm-placeholder.jpg",
   },
   {
     id: "analytical-advice",
     title: "Analytical Advice",
     text: "Scientific analysis of a number of aspects of your farm and stock can help improve growth, performance and margins.",
-    image: "/farm-placeholder.jpg",
   },
   {
     id: "farm-building-design",
     title: "Farm Building Design",
     text: "We design farm buildings and help ensure that they meet Department of Agriculture specifications for pollution control, slurry storage requirements and practical farm use.",
-    image: "/farm-placeholder.jpg",
   },
   {
     id: "cross-compliance-records",
     title: "Farm Compliance & Records",
     text: "Farmers must meet applicable environmental, animal-welfare and land-management obligations. We help clients organise records and understand relevant requirements.",
-    image: "/farm-placeholder.jpg",
   },
   {
     id: "accounts-analysis-profit-monitoring",
     title: "Accounts Analysis & Profit Monitoring",
     text: "This involves assessing farmers’ accounts and records so that they can be compared to other farmers of similar enterprises, helping identify opportunities to improve performance and profitability.",
-    image: "/farm-placeholder.jpg",
   },
   {
     id: "nitrates-fertiliser-plans",
     title: "Nitrates & Fertiliser Plans",
     text: "Intensive farms must ensure that they meet nitrates regulations laid down by the Department of Agriculture. We provide support with fertiliser planning and nutrient management.",
-    image: "/farm-placeholder.jpg",
   },
   {
     id: "safety-statements",
     title: "Safety Statements",
     text: "We help farm businesses prepare and organise the key safety documentation needed to support safer working practices and clearer compliance.",
-    image: "/farm-placeholder.jpg",
   },
 ];
 
@@ -121,12 +114,12 @@ export default function FarmConsultancyPage() {
       </section>
 
       {/* Sub-sections with images */}
-      <section className="mx-auto max-w-5xl space-y-16 px-6 py-12">
+      <section className="mx-auto max-w-5xl space-y-8 px-6 py-12">
         {sections.map((section, index) => (
           <div
             key={section.id}
             id={section.id}
-            className="grid scroll-mt-28 items-center gap-8 rounded-3xl border border-stone-200 bg-white p-8 shadow-sm md:grid-cols-2"
+            className="grid scroll-mt-28 items-center gap-8 rounded-3xl border border-stone-200 bg-white p-6 shadow-sm md:grid-cols-2 md:p-8"
           >
             <div className={index % 2 === 1 ? "md:order-2" : ""}>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
@@ -141,13 +134,14 @@ export default function FarmConsultancyPage() {
             </div>
 
             <div className={index % 2 === 1 ? "md:order-1" : ""}>
-              <div className="relative h-64 w-full overflow-hidden rounded-2xl border border-stone-200 bg-stone-100">
-                <Image
-                  src={section.image}
-                  alt={section.title}
-                  fill
-                  className="object-cover"
-                />
+              <div className="flex min-h-52 flex-col justify-between rounded-2xl bg-emerald-950 p-8 text-white">
+                <span className="font-serif text-6xl text-emerald-200/60" aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">Area of expertise</p>
+                  <p className="mt-2 font-serif text-2xl font-semibold">{section.title}</p>
+                </div>
               </div>
             </div>
           </div>

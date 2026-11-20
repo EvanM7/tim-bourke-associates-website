@@ -11,7 +11,6 @@ const navItems = [
   { href: "/equine-services", label: "Equine Services" },
   { href: "/prostep", label: "Prostep" },
   { href: "/projects", label: "Projects" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -91,7 +90,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-6 lg:flex">
+          <nav aria-label="Main navigation" className="hidden items-center gap-5 xl:gap-6 lg:flex">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -117,7 +116,8 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-stone-900 lg:hidden"
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-controls="mobile-navigation"
             aria-expanded={isOpen}
           >
             <span className="text-2xl">{isOpen ? "✕" : "☰"}</span>
@@ -125,8 +125,8 @@ export default function Navbar() {
         </div>
 
         {isOpen && (
-          <div className="border-t border-stone-200 bg-white lg:hidden">
-            <div className="flex flex-col space-y-5 px-6 py-6">
+          <div id="mobile-navigation" className="border-t border-stone-200 bg-white lg:hidden">
+            <div className="flex max-h-[calc(100dvh-90px)] flex-col space-y-4 overflow-y-auto px-6 py-6">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
