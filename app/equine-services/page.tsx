@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PageHero from "@/components/PageHero";
@@ -47,31 +46,26 @@ export default function EquineServicesPage() {
         description="We provide specialised equine consultancy services, helping horse owners and stud farms optimise nutrition, forage quality and grassland performance."
       />
 
-      {/* Main image */}
+      {/* Text-led introduction until Tim supplies an approved, high-quality stud-farm photograph. */}
       <section className="mx-auto max-w-5xl px-6 py-12">
-        <div className="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm">
-          <div className="relative h-[280px] w-full sm:h-[360px] md:h-[440px]">
-            <Image
-              src="/horses-field.jpg"
-              alt="Equine services overview"
-              fill
-              priority
-              className="object-cover"
-            />
-          </div>
-
-          <div className="p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-800">
-              Equine Services
-            </p>
-            <h2 className="mt-3 font-serif text-2xl font-semibold tracking-tight text-stone-900 sm:text-3xl">
-              Specialist support for horse owners and stud farms
-            </h2>
-            <p className="mt-4 max-w-3xl leading-7 text-stone-700">
+        <div className="grid gap-7 rounded-3xl bg-[#f5f7f2] p-8 md:grid-cols-[1.2fr_0.8fr] md:p-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-800">Equine consultancy</p>
+            <h2 className="mt-3 font-serif text-3xl font-semibold text-stone-900 sm:text-4xl">Better decisions start with the land and the diet.</h2>
+            <p className="mt-5 max-w-2xl leading-8 text-stone-700">
               From pasture quality and forage analysis to tailored feed programmes,
-              our advice combines practical farm management with detailed
-              understanding of equine nutritional needs.
+              our advice combines agricultural expertise with the nutritional requirements
+              of each stud farm or equine operation.
             </p>
+          </div>
+          <div className="rounded-2xl bg-emerald-950 p-7 text-white">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">Areas of support</p>
+            <ul className="mt-5 space-y-4 text-sm leading-6 text-emerald-50">
+              <li>Forage and diet assessment</li>
+              <li>Nutrient recommendations</li>
+              <li>Feed programmes</li>
+              <li>Grassland maintenance</li>
+            </ul>
           </div>
         </div>
       </section>
