@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -27,27 +26,14 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid items-center gap-14 md:grid-cols-2">
-          <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-stone-200 bg-stone-100 shadow-xl">
-              <Image
-                src="/farm-placeholder.jpg"
-                alt="Tipperary farmland"
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute -bottom-6 -right-4 max-w-[260px] rounded-2xl border border-stone-200 bg-white p-5 shadow-xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-800">
-                Established
-              </p>
-              <p className="mt-1 font-serif text-2xl font-semibold text-stone-900">
-                1996
-              </p>
-              <p className="mt-1 text-sm text-stone-600">
-                Killastafford, Cashel, Co. Tipperary
-              </p>
+          <div className="relative overflow-hidden rounded-[2rem] bg-[#f5f7f2] p-8 shadow-sm sm:p-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-800">Tim Bourke &amp; Associates</p>
+            <p className="mt-5 font-serif text-6xl font-semibold tracking-tight text-emerald-950 sm:text-7xl">Since 1996</p>
+            <p className="mt-6 text-lg leading-8 text-stone-700">Based in Killastafford, Cashel, Co. Tipperary.</p>
+            <div className="mt-10 space-y-4 border-t border-emerald-900/15 pt-7">
+              <p className="font-semibold text-emerald-950">Agricultural consultancy</p>
+              <p className="font-semibold text-emerald-950">Equine and livestock nutrition</p>
+              <p className="font-semibold text-emerald-950">Practical farm planning</p>
             </div>
           </div>
 
