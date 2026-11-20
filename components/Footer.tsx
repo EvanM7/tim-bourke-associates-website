@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,9 +7,11 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <Link href="/" className="flex items-center gap-2 text-stone-900">
-              <span aria-hidden="true" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-50 p-1 ring-1 ring-emerald-900/15">
-                <Image src="/logo-mark.svg" alt="" width={32} height={32} className="h-8 w-8 object-contain" />
-              </span>
+              <span
+                aria-hidden="true"
+                className="block h-10 w-10 shrink-0 bg-contain bg-center bg-no-repeat"
+                style={{ backgroundImage: 'url("/favicon.ico")' }}
+              />
               <span className="font-serif text-lg font-semibold tracking-tight">
                 Tim Bourke &amp; Associates
               </span>
