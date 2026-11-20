@@ -48,3 +48,15 @@ npm run build
 ```
 
 Vercel previews are automatically created from GitHub branch pushes. Merge only after review; production deployment remains linked to the main branch.
+
+## Pre-review cleanup (November 2026)
+
+- Replaced customer-visible draft text on Equine Services.
+- Replaced repeated generic service imagery with numbered, service-specific panels.
+- Removed the internal photo verification note from the Projects page; the image source is now credited simply to Tim.
+- Simplified desktop/mobile navigation and improved menu controls.
+- Replaced potentially unsupported racing claims in highlighted homepage/about copy.
+- Added a user-facing contact-form fallback and general error display, plus an enquiry-data disclosure.
+- Added visible focus states and reduced-motion support.
+
+**Still to verify before launching on prostep.ie:** live Formspree delivery and recipient, Tim's approval of services/claims, client video permission, and domain/email migration.

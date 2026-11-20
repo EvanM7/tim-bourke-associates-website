@@ -66,11 +66,10 @@ export default function AboutPage() {
               tailored to the unique environment of every farm or stud.
             </p>
             <p className="mt-4 text-lg leading-8 text-stone-700">
-              Tim Bourke has 25 years&rsquo; experience working with stud farms
-              on grassland management and feed programmes, and has advised the
-              mineral nutrition of many horses at major racing operations
-              &mdash; with the Prostep process associated with horses that have
-              gone on to win Group&nbsp;1 and classic races.
+              Tim Bourke has decades of experience advising farms and stud
+              farms on grassland management, nutritional programmes and practical
+              planning decisions. His Prostep approach brings specialist
+              knowledge to equine feeding and supplementation.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">

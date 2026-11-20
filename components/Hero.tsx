@@ -64,7 +64,7 @@ export default function Hero() {
       <div className="relative">
         <div className="mx-auto max-w-6xl px-6">
           <div className="-mb-12 grid divide-x divide-stone-200 overflow-hidden rounded-2xl border border-stone-200 bg-white/95 shadow-xl backdrop-blur sm:grid-cols-2 lg:grid-cols-4">
-            <Stat label="Years of experience" value="30+" sub="Founded 1996" />
+            <Stat label="Established" value="1996" sub="Based in Cashel" />
             <Stat
               label="Sectors served"
               value="Farm &amp; Equine"
@@ -101,10 +101,9 @@ function Stat({
       <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-800">
         {label}
       </p>
-      <p
-        className="mt-2 font-serif text-2xl font-semibold tracking-tight text-stone-900"
-        dangerouslySetInnerHTML={{ __html: value }}
-      />
+      <p className="mt-2 font-serif text-2xl font-semibold tracking-tight text-stone-900">
+        {value.replaceAll("&amp;", "&").replaceAll("&nbsp;", " ")}
+      </p>
       <p className="mt-1 text-sm text-stone-500">{sub}</p>
     </div>
   );

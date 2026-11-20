@@ -32,6 +32,16 @@ section {
   scroll-margin-top: 100px;
 }
 
+:focus-visible {
+  outline: 3px solid #047857;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .tba-fade-up, .tba-fade-up-delay-1, .tba-fade-up-delay-2, .tba-fade-up-delay-3 { animation: none; }
+}
+
 /* Subtle fade-in on initial load for hero copy */
 @keyframes tba-fade-up {
   from {
