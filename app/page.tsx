@@ -64,9 +64,8 @@ export default function Home() {
             <p className="mt-5 text-lg leading-8 text-stone-700">
               Tim Bourke &amp; Associates was established in 1996 to provide
               consultancy across the agricultural sector &mdash; from nutrient
-              and grassland management to equine and livestock nutrition. Our
-              clients work in agriculture, equine, fodder and waste, and
-              include some of the world&rsquo;s most respected stud farms.
+              and grassland management to equine and livestock nutrition.
+              We work with farmers, landowners, stud farms and equine businesses.
             </p>
             <p className="mt-4 text-lg leading-8 text-stone-700">
               We provide a specialised service to farmers and the bloodstock
@@ -189,15 +188,13 @@ export default function Home() {
                 Equine focus
               </p>
               <h2 className="mt-3 font-serif text-4xl font-semibold tracking-tight text-stone-900 sm:text-5xl">
-                Trusted by leading stud farms in Ireland and abroad.
+                Nutritional and grassland advice for stud farms.
               </h2>
               <p className="mt-5 text-lg leading-8 text-stone-700">
-                Tim Bourke has 25 years&rsquo; experience advising stud farms on
-                grassland management and feed programmes, and has supported the
-                mineral nutrition of horses associated with major racing
-                operations. We perform detailed scientific analysis of soil,
-                grass, animal tissue and water, and compile recommendations
-                specific to each farm&rsquo;s unique environment.
+                Our approach brings together grassland management, forage and diet
+                assessment, and practical nutritional recommendations.
+                Each programme takes account of the farm&apos;s environment,
+                horses and individual requirements.
               </p>
 
               <ul className="mt-7 space-y-3">
@@ -266,9 +263,8 @@ export default function Home() {
                 The Prostep process was devised by Tim Bourke after years of
                 experience in equine nutrition. It identifies nutrient
                 imbalances in the diet of horses and provides practical
-                solutions so they grow and mature in the best possible way
-                &mdash; helping potential ability come through on the race
-                track. Products are tailored to the nutritional needs identified for each farm.
+                solutions based on each farm&apos;s needs. Products are tailored
+                to the nutritional requirements identified during assessment.
               </p>
 
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">

@@ -20,7 +20,7 @@ const consultancyAreas = [
   "Farm Building Design",
   "Accounts Analysis & Profit Monitoring",
   "Analytical Advice",
-  "Cross Compliance & Records",
+  "Farm Compliance & Records",
   "Nitrates & Fertiliser Plans",
 ];
 
@@ -28,7 +28,7 @@ const reasonsToChoose = [
   "Based in Cashel, Co. Tipperary",
   "Practical support for real farm decisions",
   "Clear advice across planning, performance and compliance",
-  "Easy route to direct enquiries",
+  "Direct contact with the consultancy",
 ];
 
 export default function FarmConsultantTipperaryPage() {
@@ -91,7 +91,7 @@ export default function FarmConsultantTipperaryPage() {
               <SectionIntro
                 eyebrow="Local Presence"
                 title="Based in Cashel, serving farm clients across Tipperary"
-                description="Being based in Cashel gives the business a strong local base for supporting farmers and landowners across Tipperary."
+                description="Based in Cashel, the consultancy works with farmers and landowners across Tipperary."
               />
             </div>
 

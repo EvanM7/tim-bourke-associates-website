@@ -64,7 +64,7 @@ export default function EquineServicesTipperaryPage() {
             <SectionIntro
               eyebrow="Who This Is For"
               title="Built for real equine clients in Tipperary"
-              description="This page is designed to speak directly to stud farms, horse owners and the wider equine market in Tipperary."
+              description="Support for stud farms, horse owners and equine businesses seeking practical nutritional and grassland advice."
             />
 
             <div className="mt-6 space-y-4">
@@ -96,7 +96,7 @@ export default function EquineServicesTipperaryPage() {
               <SectionIntro
                 eyebrow="Prostep"
                 title="A natural route into Prostep supplements"
-                description="This page also supports the wider Prostep offering by connecting consultancy with future supplement enquiries and product sales."
+                description="For tailored equine nutritional programmes and specialist supplements, explore the Prostep offering or contact us to discuss your requirements."
               />
 
               <div className="mt-6 flex flex-col gap-4 sm:flex-row">

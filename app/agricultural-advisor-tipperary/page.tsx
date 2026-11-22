@@ -20,7 +20,7 @@ const services = [
   "Accounts Analysis & Profit Monitoring",
   "Analytical Advice",
   "Farm Building Design",
-  "Cross Compliance & Records",
+  "Farm Compliance & Records",
   "Nitrates & Fertiliser Plans",
 ];
 
@@ -60,7 +60,7 @@ export default function AgriculturalAdvisorTipperaryPage() {
             <SectionIntro
               eyebrow="Based in Cashel"
               title="Local support in Co. Tipperary"
-              description="Being based in Cashel gives Tim Bourke & Associates a strong local position for serving clients across Tipperary while also supporting surrounding counties."
+              description="Based in Cashel, we support agricultural clients throughout Tipperary and surrounding counties."
             />
           </div>
         </div>
