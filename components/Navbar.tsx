@@ -94,6 +94,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
+                aria-current={isActive(item.href) ? "page" : undefined}
                 className={`text-sm font-medium transition ${
                   isActive(item.href)
                     ? "text-emerald-800"
@@ -114,7 +115,8 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-stone-900 lg:hidden"
+            type="button"
+            className="rounded-md p-2 text-stone-900 lg:hidden"
             aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-controls="mobile-navigation"
             aria-expanded={isOpen}
@@ -125,12 +127,13 @@ export default function Navbar() {
 
         {isOpen && (
           <div id="mobile-navigation" className="border-t border-stone-200 bg-white lg:hidden">
-            <div className="flex max-h-[calc(100dvh-90px)] flex-col space-y-4 overflow-y-auto px-6 py-6">
+            <nav aria-label="Mobile navigation" className="flex max-h-[calc(100dvh-90px)] flex-col space-y-4 overflow-y-auto px-6 py-6">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
+                  aria-current={isActive(item.href) ? "page" : undefined}
                   className={`text-base font-medium ${
                     isActive(item.href)
                       ? "text-emerald-800"
@@ -160,7 +163,7 @@ export default function Navbar() {
                   tim@prostep.ie
                 </a>
               </div>
-            </div>
+            </nav>
           </div>
         )}
       </div>

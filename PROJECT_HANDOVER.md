@@ -73,3 +73,12 @@ Vercel previews are automatically created from GitHub branch pushes. Merge only 
 - Added a plain-language title immediately above the Con Marnane video.
 
 **Request from Tim:** ideally one good headshot, 3–5 original high-resolution equine/stud farm photographs, approved testimonials and permission to publish named client projects. None of these are required to give Tim the prototype for review.
+
+## 22 November 2026 content and accessibility audit
+
+- Removed racing performance / client prestige claims from homepage copy pending specific client approval.
+- Removed internal SEO-page writing language from the Equine Services Tipperary page and tightened local service copy.
+- Updated older `Cross Compliance` terminology on location-focused farm pages to `Farm Compliance & Records`.
+- Improved mobile navigation semantics and current-page indicators.
+- Maintained prototype noindex safeguards; no DNS, mail or domain changes.
+- Still pending: Tim's approval of specific client/media references, real enquiry delivery test, mobile browser smoke test, and domain handover arrangements.
